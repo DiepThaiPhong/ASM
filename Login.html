@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập - Spotify</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <h1>Đăng nhập vào Spotify</h1>
+
+        <button class="google-btn">Tiếp tục bằng Google</button>
+        <button class="facebook-btn">Tiếp tục bằng Facebook</button>
+        <button class="apple-btn">Tiếp tục bằng Apple</button>
+        <button class="phone-btn">Tiếp tục bằng số điện thoại</button>
+
+        <form action="/login" method="POST">
+            <label for="email-username">Email hoặc tên người dùng</label>
+            <input type="text" id="email-username" placeholder="Email hoặc tên người dùng" required>
+
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" placeholder="Mật khẩu" required>
+
+            <button type="submit" class="login-btn">Đăng nhập</button>
+        </form>
+
+        <p><a href="#">Quên mật khẩu của bạn?</a></p>
+
+        <p>Bạn chưa có tài khoản? <a href="Signup.html">Đăng ký Spotify</a></p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #181818;
+}
+
+.navbar .logo img {
+    width: 100px;
+}
+
+.navbar .search-bar input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.navbar .user-options button {
+    background-color: #1DB954;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+section {
+    padding: 30px 50px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.artist-list,
+.album-list,
+.radio-list,
+.chart-list,
+.playlist-list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.artist-item,
+.album-item,
+.radio-item,
+.chart-item,
+.playlist-item {
+    text-align: center;
+}
+
+.artist-item img,
+.album-item img,
+.radio-item img,
+.chart-item img,
+.playlist-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.artist-item p,
+.album-item p,
+.radio-item p,
+.chart-item p,
+.playlist-item p {
+    margin-top: 10px;
+    color: #b3b3b3;
+}
+
+.footer-links {
+    padding: 20px;
+    text-align: center;
+    background-color: #181818;
+}
+
+.footer-links a {
+    color: #b3b3b3;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #1DB954;
+}
+
+
+.navbar .user-options button:hover {
+    background-color: #1ed760;
+    
+    transform: scale(1.05);
+    
+    transition: all 0.3s ease;
+}
+
+.artist-item p:hover,
+.album-item p:hover,
+.radio-item p:hover,
+.playlist-item p:hover,
+.footer-links a:hover {
+    color: #1DB954;
+    
+    transform: scale(1.1);
+    
+    transition: all 0.3s ease;
+}
+
+
+.artist-item img:hover,
+.album-item img:hover,
+.radio-item img:hover,
+.playlist-item img:hover {
+    transform: scale(1.1);
+   
+    transition: all 0.3s ease;
+}
+
+
+.artist-item p,
+.album-item p,
+.radio-item p,
+.playlist-item p {
+    margin-top: 10px;
+    color: #e0e0e0;
+    
+}
+
+
+.artist-item,
+.album-item,
+.radio-item,
+.playlist-item {
+    width: 150px;
+}
+
+section {
+    padding: 30px 5%;
+   
+}
+
+
+@media (max-width: 768px) {
+    .navbar .search-bar input {
+        width: 200px;
+    }
+
+    .artist-list,
+    .album-list,
+    .radio-list,
+    .playlist-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .artist-item img,
+    .album-item img,
+    .radio-item img,
+    .playlist-item img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .artist-item p,
+    .album-item p,
+    .radio-item p,
+    .playlist-item p {
+        font-size: 14px;
+    }
+}

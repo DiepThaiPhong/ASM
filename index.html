@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+    <nav class="navbar">
+        <div class="logo">
+            <img src="pngegg.png" alt="Spotify Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Bạn muốn phát gì hôm nay?">
+        </div>
+        <div class="user-options">
+            <button>Đăng ký</button>
+            <button>Đăng nhập</button>
+        </div>
+    </nav>
+
+    
+    <!--  Nghệ sĩ  -->
+    <section class="popular-section">
+        <h2>Nghệ sĩ phổ biến</h2>
+        <div class="artist-list">
+            <div class="artist-item">
+                <a href="https://vi.wikipedia.org/wiki/S%C6%A1n_T%C3%B9ng_M-TP" target="_blank">
+                    <img src="channels4_profile.jpg" alt="Artist 1">
+                    <p>Sơn Tùng</p>
+                </a>
+            </div>
+            <div class="artist-item">
+                <a href="https://en.wikipedia.org/wiki/John_Newman_(singer)" target="_blank">
+                    <img src="John-Newman-Love-Me-Again.jpg" alt="Artist 2">
+                    <p>John Newman</p>
+                </a>
+            </div>
+            <div class="artist-item">
+                <a href="https://en.wikipedia.org/wiki/Imagine_Dragons" target="_blank">
+                    <img src="channels4_profile (1).jpg" alt="Artist 3">
+                    <p>Imagine Dragons</p>
+                </a>
+            </div>
+            <div class="artist-item">
+                <a href="https://en.wikipedia.org/wiki/Linkin_Park" target="_blank">
+                    <img src="images.jpg" alt="Artist 4">
+                    <p>Linkin Park</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Album phổ biến -->
+    <section class="album-section">
+        <h2>Album phổ biến</h2>
+        <div class="album-list">
+            <div class="album-item">
+                <a href="Album.html">
+                    <img src="ImagineDragonsEvolve.jpg" alt="Album 1">
+                    <p>Evolve</p>
+                </a>
+            </div>
+            <div class="album-item">
+                <a href="Album.html">
+                    <img src="tải xuống.jpg" alt="Album 2">
+                    <p>Revolve</p>
+                </a>
+            </div>
+            <div class="album-item">
+                <a href="Album.html">
+                    <img src="Linkin_Park_-_Living_Things.jpg" alt="Album 3">
+                    <p>Living Things</p>
+                </a>
+            </div>
+            <div class="album-item">
+                <a href="Album.html">
+                    <img src="Sontungmtpalbumcover.jpg" alt="Album 4">
+                    <p>m-tp M-TP</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Radio phổ biến -->
+    <section class="radio-section">
+        <h2>Radio phổ biến</h2>
+        <div class="radio-list">
+            <div class="radio-item">
+                <img src="top-10-kenh-podcast-tieng-viet-truyen-cam-hung-hay-nhat-10-800x450.jpg" alt="Radio 1">
+                
+            </div>
+            <div class="radio-item">
+                <img src="top-10-kenh-podcast-tieng-viet-truyen-cam-hung-hay-nhat-9-800x450.jpg" alt="Radio 2">
+                
+            </div>
+            <div class="radio-item">
+                <img src="top-10-kenh-podcast-tieng-viet-truyen-cam-hung-hay-nhat-11-800x450.jpg" alt="Radio 3">
+                
+            </div>
+            <div class="radio-item">
+                <img src="top-10-kenh-podcast-tieng-viet-truyen-cam-hung-hay-nhat-7-800x450.jpg" alt="Radio 4">
+                
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Phần Danh sách phát -->
+    <section class="playlist-section">
+        <h2>Danh sách phát trên Spotify</h2>
+        <div class="playlist-list">
+            <div class="playlist-item">
+                <img src="Louis-Armstrong-1953.webp" alt="Playlist 1">
+                <p>Jazz</p>
+            </div>
+            <div class="playlist-item">
+                <img src="images (1).jpg" alt="Playlist 2">
+                <p>Pop</p>
+            </div>
+            <div class="playlist-item">
+                <img src="tải xuống (1).jpg" alt="Playlist 3">
+                <p>Rock</p>
+            </div>
+            <div class="playlist-item">
+                <img src="maxresdefault.jpg" alt="Playlist 4">
+                <p>Electronic</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelector('.user-options button:first-child').addEventListener('click', function () {
+            window.location.href = 'Signup.html';
+        });
+
+        document.querySelector('.user-options button:last-child').addEventListener('click', function () {
+            window.location.href = 'Login.html';
+        });
+    </script>
+
+
+    
+    <footer>
+        <div class="footer-links">
+            <a href="https://www.spotify.com/vn-vi/legal/end-user-agreement/">Pháp lý</a>
+            <a href="https://www.spotify.com/vn-vi/legal/end-user-agreement/">Trung tâm an toàn và quyền riêng tư</a>
+            <a href="https://www.spotify.com/vn-vi/legal/privacy-policy/">Chính sách quyền riêng tư</a>
+            <a href="https://www.spotify.com/vn-vi/legal/cookies-policy/">Cookie</a>
+            <a href="https://www.spotify.com/vn-vi/accessibility">Hỗ trợ tiếp cận</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

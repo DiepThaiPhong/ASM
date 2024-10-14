@@ -1,0 +1,65 @@
+/* CSS cho Album.html */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.album-header {
+    background-color: #181818;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.album-info {
+    display: flex;
+    align-items: center;
+}
+
+.album-cover {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.album-details {
+    margin-left: 20px;
+}
+
+.album-details h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.album-details p {
+    font-size: 1rem;
+    color: #b3b3b3;
+}
+
+.tracklist-section {
+    padding: 20px;
+}
+
+.tracklist-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.tracklist {
+    list-style: none;
+    padding: 0;
+}
+
+.tracklist li {
+    font-size: 1rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    color: #b3b3b3;
+}
